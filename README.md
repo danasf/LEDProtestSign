@@ -15,7 +15,7 @@ Bill of Materials
 * Optional, but helpful, if you want to make everything detachable: extra [JST connectors](https://www.adafruit.com/products/1663)
 * Posterboard, wire, solder and soldering iron, tape, glue, etc.
 
-Cost: $50-120 Depending upon sourcing and parts you have on hand!
+Cost: ~$120, cheaper if you can do your own sourcing or have parts on hand!
 
 Software
 ------------
