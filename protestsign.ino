@@ -29,7 +29,7 @@ int numMode = arr_len(slogans)-1;
 int numColor = arr_len(colors)-1;
 int  pixelPerChar = 6;
 int  maxDisplacement;
-int mode = 1;
+int mode = 0;
 
 void setup() { 
   matrix.begin();
