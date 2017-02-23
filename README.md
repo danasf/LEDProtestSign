@@ -3,12 +3,12 @@ LED Protest Sign Scroller
 
 ![LED scroller](http://i.giphy.com/gQoLZwt0bDpok.gif)
 
-For use with ATMega328 compatible board and WS281x LED matrix (and probably easily adaptable to other microcontrollers, DotStar / APA LEDs)
+For use with Arduino compatible board and WS281x (Neopixel) or APA102 (DotStar) LED matrix (and probably easily adaptable to other microcontrollers, LEDs)
 
 Bill of Materials
 ------------
 
-* [8x32 WS2812 "Neopixel" LED Matrix](https://www.adafruit.com/product/2294)
+* [8x32 WS2812 "Neopixel" LED Matrix](https://www.adafruit.com/product/2294) or [8x32 APA102 "DotStar" LED Matrix](https://www.adafruit.com/product/2736)
 * Small Arduino-compatible board of your choice. [Metro Mini](https://www.adafruit.com/products/2590), [Trinket Pro](https://www.adafruit.com/products/2000), [Flora](https://www.adafruit.com/product/659), Arduino Nano work great here
 * Old USB cable you don't mind chopping up (you're going to use it for power, not data)
 * [USB Battery Pack](https://www.adafruit.com/product/1959) or lithium battery (be careful)
@@ -23,9 +23,13 @@ Software
 * [Adafruit NeoPixel library](https://github.com/adafruit/Adafruit_NeoPixel)
 * [Adafruit NeoMatrix library](https://github.com/adafruit/Adafruit_NeoMatrix)
 
+(Or DotStar variations if using APA102 LEDs)
+
 Instructions
 ------------
-* Open the `protestsign.ino` in Arduino IDE
+These assume you are using WS2812 "Neopixels", but the process should be similar with an APA102 Matrix!
+
+* Open the `neopixelsign.ino` (or `dotstarsign.ino` if using APA102 LEDs) in Arduino IDE
 * Install the Adafruit libraries, `Sketch > Include Libraries > Manage Libraries`, or unzip into your `Arduino/libraries` folder
 * In Arduino IDE, edit the protest messages in the config area (and colors if desired)
 * Upload the sample sketch to your micro controller. 
@@ -37,6 +41,12 @@ Instructions
 [NeoPixel/WS2812 Best Practices](https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices)
 
 *NOTE* when you attempt to reprogram your Arduino, either unplug the LED matrix or make sure to connect your USB Battery, so all the power doesn't flow through the Ardunio to the matrix frying it. 
+
+Troubleshooting & Improvements
+------------
+
+* Some LEDs might be wired a bit differently. Take a look at the initialization params in `Adafruit_NeoMatrix()` if you're having trouble!
+* Add a bluetooth to serial dongle, wifi, or cellular connectivity and modify the code to remotely control the display.
 
 Other LED Sign Ideas
 ------------
