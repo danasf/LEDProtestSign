@@ -27,7 +27,7 @@ Software
 
 Instructions
 ------------
-These assume you are using WS2812 "Neopixels", but the process should be similar with an APA102 Matrix!
+These assume you are using WS2812 "Neopixels", but the process should be similar with an APA102 "Dotstar" Matrix and I've included a MVP sketch for those as well!
 
 * Open the `neopixelsign.ino` (or `dotstarsign.ino` if using APA102 LEDs) in Arduino IDE
 * Install the Adafruit libraries, `Sketch > Include Libraries > Manage Libraries`, or unzip into your `Arduino/libraries` folder
@@ -46,6 +46,7 @@ Troubleshooting & Improvements
 ------------
 
 * Some LEDs might be wired a bit differently. Take a look at the initialization params in `Adafruit_NeoMatrix()` if you're having trouble!
+* If you're using APA102 and you want to use Hardware SPI omit the CLOCK and DATA pins from your `Adafruit_DotStarMatrix()` constructor.
 * Add a bluetooth to serial dongle, wifi, or cellular connectivity and modify the code to remotely control the display.
 
 Other LED Sign Ideas
