@@ -87,4 +87,6 @@ Tips, Troubleshooting, & Improvements
 Other LED Sign Ideas
 ------------
 * Static LED signs via [Overpass Light Brigade](https://www.dailykos.com/story/2011/11/18/1037625/--Make-Diary-DIY-LED-Signs-To-Light-Up-The-Night)
+* [LED POV Umbrella](https://creators.vice.com/en_us/article/wnkkyy/hacked-umbrella-sprizzle-led-screen-for-protesters)
+* [Matrix protest sign with MicroSD](https://github.com/brightcolorfulflickers/protestsign)
 * [SMS Messenger Bag](https://learn.adafruit.com/smssenger-bag) via Adafruit
