@@ -11,10 +11,11 @@ Bill of Materials
 ------------
 
 * [8x32 WS2812 "Neopixel" LED Matrix](https://www.adafruit.com/product/2294) (or 8x32 APA102 "DotStar" LED Matrix)
-* Small Arduino-compatible board of your choice: Arduino Nano, [Flora](https://www.adafruit.com/product/659), [Feather 32u4](https://www.adafruit.com/products/2771), [Metro Mini](https://www.adafruit.com/products/2590), [Trinket Pro](https://www.adafruit.com/products/2000) all work great here.
+* Small Arduino-compatible board of your choice: Arduino Nano, [Flora](https://www.adafruit.com/product/659), [Feather 32u4](https://www.adafruit.com/products/2771), [Metro Mini](https://www.adafruit.com/products/2590), [Trinket Pro](https://www.adafruit.com/products/2000) all work great here. _Tip: Flora and Feather 32u4 can handle a good amount of current and make working with lithium batteries a breeze. If you use one of these minimal hacking is required!_
 * Power source: USB Battery Pack or lithium battery.
 * Posterboard, wire, solder and soldering iron, tape, glue, etc.
 * If using a USB Battery Pack: an old USB cable you don't mind chopping up (you're going to use it for power, not data)
+* If using a lithium battery: a lithium [battery charger](https://www.adafruit.com/product/259)
 * Optional, but very helpful extra [JST connectors](https://www.adafruit.com/products/1663) (if you want to make everything detachable)
 
 Cost: ~$120 if you buy everything retail, a lot less if you can buy bulk, do your own sourcing, or have some of the parts on hand!
@@ -63,7 +64,7 @@ const uint16_t colors[] = { matrix.Color(255, 0, 0), matrix.Color(0, 255, 0), ma
 * Upload the sample sketch to your microcontroller. 
 
 _If you're using a USB power pack_
-* Cut off the end of a USB cable, strip the power and ground wires (red and black).
+* Cut off the end of your USB cable, strip the power and ground wires (red and black).
 * You're going to create a "Y" here. Run power and ground to your LED matrix power and ground. Run power and ground to your microcontroler's power and ground pins. Solder. 
 
 _If you're using a lithium battery (This assumes your micro controller has a connector for the battery and is robust enough to handle the output current needed to drive the matrix. Many are now designed with this in mind!)_
