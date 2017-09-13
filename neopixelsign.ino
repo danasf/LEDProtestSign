@@ -8,10 +8,14 @@
 #include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
 
-#define PIN 6
+// DATA PIN
+// If you want to use a different data pin on your microcontroller CHANGE THIS!
+#define DATA_PIN 6
+
 #define arr_len( x )  ( sizeof( x ) / sizeof( *x ) )
 
-Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(32, 8, PIN,
+// Matrix setup params
+Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(32, 8, DATA_PIN,
   NEO_MATRIX_TOP     + NEO_MATRIX_LEFT +
   NEO_MATRIX_COLUMNS + NEO_MATRIX_ZIGZAG,
   NEO_GRB            + NEO_KHZ800);
@@ -27,8 +31,8 @@ int brightness = 100;
 
 int numMode = arr_len(slogans)-1;
 int numColor = arr_len(colors)-1;
-int  pixelPerChar = 6;
-int  maxDisplacement;
+int pixelPerChar = 6;
+int maxDisplacement;
 int mode = 0;
 
 void setup() { 
