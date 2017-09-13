@@ -11,8 +11,8 @@ Bill of Materials
 ------------
 
 * [8x32 WS2812 "Neopixel" LED Matrix](https://www.adafruit.com/product/2294) (or 8x32 APA102 "DotStar" LED Matrix)
-* Small Arduino-compatible board of your choice: Arduino Nano, [Flora](https://www.adafruit.com/product/659), [Feather 32u4](https://www.adafruit.com/products/2771), [Metro Mini](https://www.adafruit.com/products/2590), [Trinket Pro](https://www.adafruit.com/products/2000) all work great here. _Tip: Flora and Feather 32u4 can handle a good amount of current and make working with lithium batteries a breeze. If you use one of these minimal hacking is required!_
-* Power source: USB Battery Pack or lithium battery.
+* Small Arduino-compatible board of your choice: Arduino Nano, [Flora](https://www.adafruit.com/product/659), [Feather 32u4](https://www.adafruit.com/products/2771), [Metro Mini](https://www.adafruit.com/products/2590), [Trinket Pro](https://www.adafruit.com/products/2000) all work great here. _Tip: Flora and Feather boards can handle a good amount of current and make working with lithium batteries a breeze. If you use one of these minimal hacking is required!_
+* Power source: USB Battery Pack or [lithium battery](https://www.adafruit.com/product/328).
 * Posterboard, wire, solder and soldering iron, tape, glue, etc.
 * If using a USB Battery Pack: an old USB cable you don't mind chopping up (you're going to use it for power, not data)
 * If using a lithium battery: a lithium [battery charger](https://www.adafruit.com/product/259)
