@@ -24,13 +24,13 @@ Very basic hardware setup shown below: LED Matrix, a lithium battery, a Flora bo
 
 Software
 ------------
-To keep thing easy here I tried to use as much off the shelf material as possible.
+To keep things easy here I've tried to use as much off the shelf material as possible.
 
 You need to install the Arduino IDE:
 
 * [Arduino IDE](https://www.arduino.cc/en/main/software)
 
-And some Arduino libraries 
+And some Arduino libraries: 
 
 * [Adafruit NeoPixel library](https://github.com/adafruit/Adafruit_NeoPixel)
 * [Adafruit NeoMatrix library](https://github.com/adafruit/Adafruit_NeoMatrix)
@@ -46,7 +46,7 @@ These assume you are using WS2812 "Neopixels", but the process should be similar
 * Open the `neopixelsign.ino` in Arduino IDE
 * Install the Adafruit libraries, `Sketch > Include Libraries > Manage Libraries`, or unzip into your `Arduino/libraries` folder ([more instructions how to install Arduino libraries](https://www.arduino.cc/en/Guide/Libraries))
 
-* In Arduino IDE, edit the protest messages in the config area (and colors if desired)
+* In the Arduino IDE, edit the protest messages in the config area (and colors if desired)
 
 ```
 // Put your messages here
@@ -57,9 +57,10 @@ const uint16_t colors[] = { matrix.Color(255, 0, 0), matrix.Color(0, 255, 0), ma
 
 ```
 
-* Upload the sample sketch to your microcontroller. 
-* Attach the `DATA` line of your LED matrix to one of your Arduino's digital pins (in the example it's defined as _Digital Pin 6_, but you can change this) -- if you'd like you can add a 300 to 500 Ohm resistor. 
+* Attach the `DATA` line of your LED matrix to one of your Arduino's digital pins (in the example we use _Digital Pin 6_, but you can change this) -- if you'd like you can add a 300 to 500 Ohm resistor. 
 [NeoPixel/WS2812 Best Practices](https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices)
+
+* Upload the sample sketch to your microcontroller. 
 
 _If you're using a USB power pack_
 * Cut off the end of a USB cable, strip the power and ground wires (red and black).
