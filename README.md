@@ -10,7 +10,7 @@ I've built a version mounted on posterboard, and some water-resistant bag-mounte
 Bill of Materials
 ------------
 
-* [8x32 WS2812 "Neopixel" LED Matrix](https://www.adafruit.com/product/2294) (or 8x32 APA102 "DotStar" LED Matrix)
+* 8x32 WS2812 "Neopixel" LED Matrix [Ebay](http://www.ebay.com/itm/DIYmall-WS2812-5050-8x8-16x16-8x32-RGB-Flexible-LED-Matrix-Panel-Addressable-/272760712939) [Adafruit](https://www.adafruit.com/product/2294),  8x32 APA102 "DotStar" LED Matrix can also work.
 * Small Arduino-compatible board of your choice: Arduino Nano, [Flora](https://www.adafruit.com/product/659), [Feather 32u4](https://www.adafruit.com/products/2771), [Metro Mini](https://www.adafruit.com/products/2590), [Trinket Pro](https://www.adafruit.com/products/2000) all work great here. _Tip: Flora and Feather boards can handle a good amount of current and make working with lithium batteries a breeze. If you use one of these minimal hacking is required!_
 * Power source: USB Battery Pack or [lithium battery](https://www.adafruit.com/product/328).
 * Posterboard, wire, solder and soldering iron, tape, glue, etc.
@@ -18,7 +18,7 @@ Bill of Materials
 * If using a lithium battery: a lithium [battery charger](https://www.adafruit.com/product/259)
 * Optional, but very helpful extra [JST connectors](https://www.adafruit.com/products/1663) (if you want to make everything detachable)
 
-Cost: ~$120 if you buy everything retail, a lot less if you can buy bulk, do your own sourcing, or have some of the parts on hand!
+Cost: ~$80-120 if you buy everything retail, a lot less if you can buy bulk, do your own sourcing, or have some of the parts on hand!
 
 Very basic hardware setup shown below: LED Matrix, a lithium battery, a Flora board, some JST SM connectors.
 ![Hardware components](./led1.png)
